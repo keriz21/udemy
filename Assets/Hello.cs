@@ -27,5 +27,10 @@ public class Hello : MonoBehaviour
         {
             Debug.Log("tombol spasi tertekan");
         }
+
+        if (Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            Debug.LogError("tombol up tertekan");
+        }
     }
 }
