@@ -16,11 +16,16 @@ public class Hello : MonoBehaviour
         Debug.Log("nama saya adalah " + namaPercobaan);
         Debug.LogWarning("ini bakal ada " + angkaCoba + " iterasi");
         Debug.LogError("Kecepatannya adalah " + speed);
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("tombol spasi tertekan");
+        }
     }
 }
