@@ -44,5 +44,18 @@ public class Hello : MonoBehaviour
         {
             myRigidBody.velocity = new Vector2(-10f, 0f);
         }
+
+        if (transform.position.x > 9.5f)
+        {
+            Debug.LogWarning("Kotak keluar dari sisi kanan");
+        } else if(transform.position.x < -9.5f)
+        {
+            Debug.LogWarning("kotak keluar dari sisi kiri");
+        }
+
+        if (transform.position.y > 5.5f)
+        {
+            Debug.LogWarning("kotak menujju langit biru");
+        }
     }
 }
